@@ -96,5 +96,6 @@
     -->
 
     <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.device" />
 
 </widget>
