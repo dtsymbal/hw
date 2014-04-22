@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "res/xml/config.xml": {
+            "/*": {
+                "<feature name=\"Tst\"><param name=\"android-package\" value=\"com.stuzo.tst.Tst\" /></feature>": 1
+            }
+        },
+        "AndroidManifest.xml": {
+            "/manifest": {
+                "<uses-permission android:name=\"android.permission.SEND_SMS\" />": 1,
+                "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.stuzo.tst": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        }
+    },
+    "dependent_plugins": {}
+}
