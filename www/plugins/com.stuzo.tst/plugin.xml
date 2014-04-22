@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+           id="com.stuzo.tst"
+      version="0.1.0">
+    <name>Tst</name>
+    <description>Cordova Tst Stuzo Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,phonegap</keywords>
+    <repo>https://github.com/dtsymbal/tst.git</repo>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+    </engines>    
+
+    <js-module src="www/tst.js" name="Tst">
+        <clobbers target="window.tst" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Tst">
+                <param name="android-package" value="com.stuzo.tst.Tst"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.SEND_SMS" />
+            <uses-feature android:name="android.hardware.telephony" android:required="false" />
+        </config-file>
+
+        <source-file src="src/android/Tst.java" target-dir="src/org/apache/cordova/plugin/tst" />
+    </platform>
+</plugin>
