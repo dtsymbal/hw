@@ -100,6 +100,7 @@
     <gap:plugin name="org.apache.cordova.device" />
     -->
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
-    <gap:plugin name="com.stuzo.tst" value="plugins/com.stuzo.tst" />
+    <gap:plugin name="com.stuzo.tst" value="com.stuzo.tst" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" />
 
 </widget>
